@@ -7,24 +7,24 @@ European tables have 37 outcomes (1-36 + 0).
 
 ```
 You approach a 38 outcomes table with $10000 and use a strategy of $2 on 1st 12, $2 on 2nd 12, $0 on 3rd 12, and 3 on red
-😭 wallet exhausted! You lost all your money ($10000) after 24383 rounds
-(final wallet balance is $6, not enough to keep playing this strategy)
+😭 You went from ($10000) to 4 in 28789 rounds
+You achieved your highest wallet balance in round 12 with $10001
 
 You approach a 38 outcomes table with $10000 and use a strategy of $2 on 1st 12, $2 on 2nd 12, $0 on 3rd 12, and 1 on red
-😭 wallet exhausted! You lost all your money ($10000) after 34544 rounds
-(final wallet balance is $1, not enough to keep playing this strategy)
+😭 You went from ($10000) to 4 in 38633 rounds
+You achieved your highest wallet balance in round 0 with $10000
 
 You approach a 38 outcomes table with $10000 and use a strategy of $2 on 1st 12, $2 on 2nd 12, $2 on 3rd 12, and 0 on red
-😭 wallet exhausted! You lost all your money ($10000) after 31824 rounds
-(final wallet balance is $4, not enough to keep playing this strategy)
+😭 You went from ($10000) to 4 in 31181 rounds
+You achieved your highest wallet balance in round 0 with $10000
 
 You approach a 38 outcomes table with $10000 and use a strategy of $2 on 1st 12, $2 on 2nd 12, $0 on 3rd 12, and 0 on red
-😭 wallet exhausted! You lost all your money ($10000) after 43716 rounds
-(final wallet balance is $2, not enough to keep playing this strategy)
+😭 You went from ($10000) to 0 in 47309 rounds
+You achieved your highest wallet balance in round 5 with $10002
 
 You approach a 37 outcomes table with $10000 and use a strategy of $2 on 1st 12, $2 on 2nd 12, $0 on 3rd 12, and 0 on red
-😭 wallet exhausted! You lost all your money ($10000) after 98802 rounds
-(final wallet balance is $2, not enough to keep playing this strategy)
+😭 You went from ($10000) to 0 in 95852 rounds
+You achieved your highest wallet balance in round 140 with $10002
 ```
 
 This came up when a friend suggested a betting strategy of always putting the same bet on both 1st 12 and 2nd 12, which have 2:1 payout. 

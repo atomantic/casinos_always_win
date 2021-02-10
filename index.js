@@ -6,14 +6,23 @@ const startingWallet = 10000;
 const redNumbers = [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36];
 
 const trial = ({wallet, red, first12, second12, third12, outcomes}) => {
+    let max = wallet; // max held at any given round
+    let maxRound = 0;
     console.log(`\nYou approach a ${outcomes} outcomes table with $${wallet} and use a strategy of $${first12} on 1st 12, $${second12} on 2nd 12, $${third12} on 3rd 12, and ${red} on red`);
     for(let i=0; i<iterations; i++){
+        if(wallet > startingWallet){
+            maxRound = i+1;
+            max = wallet;
+        }
         if(wallet > startingWallet*2){
             console.log(`🤑 holy smokes! You doubled your starting money to $${wallet}. Walk away!`);
             return {wallet};
         }
+        // if(wallet > startingWallet){
+        //     console.log(`🤑 you are ahead! You could walk away with $${wallet} balance now. But you keep playing...`);
+        // }
         if(wallet < red+first12+second12+third12){
-            console.log(`😭 wallet exhausted! You lost all your money ($${startingWallet}) after ${i+1} rounds\n(final wallet balance is $${wallet}, not enough to keep playing this strategy)`);
+            console.log(`😭 You went from ($${startingWallet}) to ${wallet} in ${i+1} rounds\nYou achieved your highest wallet balance in round ${maxRound} with $${max}`);
             return {wallet};
         }
         // put the money on the table
@@ -38,7 +47,7 @@ const trial = ({wallet, red, first12, second12, third12, outcomes}) => {
         // recieve 2x stake
         if(isRed)  wallet += red*2;
     }
-    console.log(`😓 played ${iterations} rounds and stopped. Final wallet balance is ${wallet}`)
+    console.log(`😓 played ${iterations} rounds and stopped.\nYou achieved your highest wallet balance in round ${maxRound} with $${max}\nFinal wallet balance is ${wallet}`)
     return {wallet};
 }
 
